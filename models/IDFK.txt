@@ -1,0 +1,19 @@
+H447538165
+
+
+using Npgsql;
+using Server;
+
+var builder = WebApplication.CreateBuilder(args);
+
+var port = builder.Configuration["PG_PORT"] ?? "5432";
+var database = builder.Configuration["PG_DATABASE"] ?? "alcorel1";
+
+NpgsqlDataSource db = NpgsqlDataSource.Create($"Host=localhost;Port={port};Database={database}" );
+
+builder.Services.AddSingleton<NpgsqlDataSource>(db);
+
+var app = builder.Build();
+
+
+
