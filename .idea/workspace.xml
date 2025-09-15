@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea24f54-d916-417e-9c46-07f9d49b5dfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Shrooming.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml_flow.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,7 @@
       <workItem from="1757671932502" duration="5566000" />
       <workItem from="1757919630744" duration="4591000" />
       <workItem from="1757924288340" duration="4223000" />
-      <workItem from="1757934257924" duration="7962000" />
+      <workItem from="1757934257924" duration="8423000" />
     </task>
     <servers />
   </component>
