@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ea24f54-d916-417e-9c46-07f9d49b5dfe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml_flow.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ml_flow.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_images/math_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/test_images/math_img.png" afterDir="false" />
-    </list>
+    <list default="true" id="8ea24f54-d916-417e-9c46-07f9d49b5dfe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,14 +78,14 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Damien\PycharmProjects\Shrooming\data" />
       <recent name="C:\Users\Damien\PycharmProjects\Shrooming\test_images" />
+      <recent name="C:\Users\Damien\PycharmProjects\Shrooming\data" />
       <recent name="C:\Users\Damien\PycharmProjects\Shrooming" />
     </key>
   </component>
@@ -117,9 +113,6 @@
       <workItem from="1757919630744" duration="4591000" />
       <workItem from="1757924288340" duration="4223000" />
       <workItem from="1757934257924" duration="8423000" />
-      <workItem from="1757943173111" duration="1862000" />
-      <workItem from="1758012480630" duration="6699000" />
-      <workItem from="1758020077013" duration="5373000" />
     </task>
     <servers />
   </component>
