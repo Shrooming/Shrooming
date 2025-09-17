@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ea24f54-d916-417e-9c46-07f9d49b5dfe" name="Changes" comment="" />
+    <list default="true" id="8ea24f54-d916-417e-9c46-07f9d49b5dfe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml_flow.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ml_flow.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_images/math_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/test_images/math_img.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +119,7 @@
       <workItem from="1757934257924" duration="8423000" />
       <workItem from="1757943173111" duration="1862000" />
       <workItem from="1758012480630" duration="6699000" />
-      <workItem from="1758020077013" duration="5737000" />
+      <workItem from="1758020077013" duration="9469000" />
     </task>
     <servers />
   </component>
