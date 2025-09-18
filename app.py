@@ -8,6 +8,7 @@ import joblib
 from skimage.feature import hog
 from sympy import sympify
 import cv2
+from streamlit_drawable_canvas import st_canvas
 
 img_size = 45
 
@@ -43,7 +44,7 @@ def segment_expression(img_pil, img_size=45):
 
     for cnt in contours:
         x, y, w, h = cv2.boundingRect(cnt)
-        if w < 5 or h < 5:
+        if w < 2 or h < 2:
             continue
 
         roi = thresh[y:y+h, x:x+w]
@@ -86,8 +87,6 @@ def solving(expr_str):
         return f"Error: {e}"
 
 
-st.write("very gud")
-
 if uploaded_file is not None:
     math_image = Image.open(uploaded_file)
     st.image(math_image, use_container_width=True)
@@ -101,3 +100,27 @@ if uploaded_file is not None:
     math_image = load_img(uploaded_file, color_mode="grayscale",
                           target_size=(img_size, img_size))
     img = img_to_array(math_image) / 255.0
+
+st.write("Draw your math problem for the HOG")
+
+canvas_result = st_canvas(
+    fill_color="rgba(255, 255, 255, 1)",  # White background
+    stroke_width=2,
+    stroke_color="black",
+    background_color="white",
+    update_streamlit=True,
+    height=200,
+    width=400,
+    drawing_mode="freedraw",
+    key="canvas",
+)
+
+if canvas_result.image_data is not None:
+    drawn_img = Image.fromarray((canvas_result.image_data).astype("uint8")) # Convert canas to PIL img
+
+
+    expr_str = classify_expression(drawn_img) # Classify
+    st.write(f"Professor HOG sees: `{expr_str}`") #
+
+    result = solving(expr_str)
+    st.write(f"Professor HOGs result: **{result}**")
