@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea24f54-d916-417e-9c46-07f9d49b5dfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/proffessorhog.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Streamlit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Streamlit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ml_flow.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ml_flow.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_images/math_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/test_images/math_img.png" afterDir="false" />
     </list>
@@ -42,6 +40,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="v3_damien" />
+                    <option name="lastUsedInstant" value="1758186583" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="damiens" />
                     <option name="lastUsedInstant" value="1757926873" />
                   </RecentBranch>
@@ -72,32 +74,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "v2__damien",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/kaspe/repos/Shrooming/Shrooming",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;v3__damien&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kaspe/repos/Shrooming/Shrooming&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kaspe\repos\Shrooming\Shrooming" />
       <recent name="C:\Users\kaspe\repos\Shrooming\Shrooming\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kaspe\repos\Shrooming\Shrooming\deleted_data" />
       <recent name="C:\Users\Damien\PycharmProjects\Shrooming\data" />
+      <recent name="C:\Users\kaspe\repos\Shrooming\Shrooming\deleted_data" />
       <recent name="C:\Users\Damien\PycharmProjects\Shrooming\test_images" />
       <recent name="C:\Users\Damien\PycharmProjects\Shrooming" />
     </key>
@@ -130,6 +132,9 @@
       <workItem from="1758012480630" duration="6699000" />
       <workItem from="1758020077013" duration="5737000" />
       <workItem from="1758067614041" duration="1828000" />
+      <workItem from="1758114585165" duration="25000" />
+      <workItem from="1758186305274" duration="515000" />
+      <workItem from="1758187157193" duration="5327000" />
     </task>
     <servers />
   </component>
@@ -139,5 +144,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Shrooming$Streamlit.coverage" NAME="Streamlit Coverage Results" MODIFIED="1758113164664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
