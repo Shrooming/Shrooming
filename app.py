@@ -90,7 +90,7 @@ st.write("very gud")
 
 if uploaded_file is not None:
     math_image = Image.open(uploaded_file)
-    st.image(math_image, use_column_width=True)
+    st.image(math_image, use_container_width=True)
 
     expr_str = classify_expression(math_image)
     st.write(f"Professor HOG reads: `{expr_str}`")
