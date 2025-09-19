@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ea24f54-d916-417e-9c46-07f9d49b5dfe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ml_flow_clean.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ml_flow.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ml_flow.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_images/math_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/test_images/math_img.png" afterDir="false" />
     </list>
@@ -19,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -41,7 +42,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="v3_damien" />
-                    <option name="lastUsedInstant" value="1758186583" />
+                    <option name="lastUsedInstant" value="1758193851" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="damiens" />
@@ -135,6 +136,8 @@
       <workItem from="1758114585165" duration="25000" />
       <workItem from="1758186305274" duration="515000" />
       <workItem from="1758187157193" duration="5327000" />
+      <workItem from="1758202845630" duration="1083000" />
+      <workItem from="1758265057626" duration="5962000" />
     </task>
     <servers />
   </component>
