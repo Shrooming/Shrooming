@@ -9,6 +9,8 @@ from skimage.feature import hog
 from sympy import sympify
 import cv2
 from streamlit_drawable_canvas import st_canvas
+import altair as alt
+import pandas as pd
 
 img_size = 45
 
@@ -21,6 +23,7 @@ uploaded_file = st.file_uploader("What's on your mind young one? Oinnk!", type=[
 rf_hog = joblib.load("models/rf_hog.pkl")
 index_to_label = joblib.load("models/index_to_label.pkl")
 
+classes = rf_hog.classes_
 def predict_symbol_rf_hog(img):
     img = img.squeeze()
     hog_feat = hog(
@@ -67,13 +70,34 @@ def segment_expression(img_pil, img_size=45):
 
 def classify_expression(img_pil):
     symbols = segment_expression(img_pil, img_size=45)
-    predicted_chars = [predict_symbol_rf_hog(s) for s in symbols]
-    return "".join(predicted_chars)
+    predictions = []
 
-def classify_expression(img_pil):
-    symbols = segment_expression(img_pil, img_size=45)
-    predicted_chars = [predict_symbol_rf_hog(s) for s in symbols]
-    return "".join(predicted_chars)
+    for s in symbols:
+        label, proba = predict_symbol_rf_hog(s)
+        predictions.append(label)
+
+        # sortera top 5klasser
+        top_idx = np.argsort(proba)[::-1][:5]
+        df_top = pd.DataFrame({
+            "Class": [index_to_label[i] for i in top_idx],
+            "Confidence": [proba[i] for i in top_idx]
+        })
+
+        # checkbox för confidence
+        if st.checkbox(f"Show Top-5 predictions for `{label}`", key=f"conf_{label}_{len(predictions)}"):
+            chart = (
+                alt.Chart(df_top)
+                .mark_bar(color="blue")
+                .encode(
+                    x=alt.X("Confidence:Q", scale=alt.Scale(domain=[0,1])),
+                    y=alt.Y("Class:N", sort="-x"),
+                    tooltip=["Class", "Confidence"]
+                )
+                .properties(title=f"Top-5 predictions for `{label}`")
+            )
+            st.altair_chart(chart, use_container_width=True)
+
+    return "".join(predictions)
 
 def solving(expr_str):
     expr_str = expr_str.replace("times", "*")
@@ -85,6 +109,22 @@ def solving(expr_str):
         return expr.evalf()
     except Exception as e:
         return f"Error: {e}"
+
+def predict_symbol_rf_hog(img):
+    img = img.squeeze()
+    hog_feat = hog(
+        img,
+        orientations=9,
+        pixels_per_cell=(4, 4),
+        cells_per_block=(2, 2),
+        block_norm="L2-Hys"
+    ).reshape(1, -1)
+
+    proba = rf_hog.predict_proba(hog_feat)[0]  # sannolikheter
+    pred_idx = np.argmax(proba)
+    return index_to_label[pred_idx], proba
+
+
 
 
 if uploaded_file is not None:
