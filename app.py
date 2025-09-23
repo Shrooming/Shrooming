@@ -20,7 +20,7 @@ st.image("proffessorhog.jpg")
 
 uploaded_file = st.file_uploader("What's on your mind young one? Oinnk!", type=["jpg", "jpeg", "png"])
 
-rf_hog = joblib.load("models/rf_hog.pkl")
+rf_hog = joblib.load("models/et_final_hog.pkl")
 index_to_label = joblib.load("models/index_to_label.pkl")
 
 classes = rf_hog.classes_
